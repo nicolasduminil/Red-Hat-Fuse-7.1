@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1544031986979
+Build-Jdk: 1.8.0_191
+Built-By: nicolas
+Bundle-ManifestVersion: 2
+Bundle-Name: OSGi Customer Management :: The data module
+Bundle-SymbolicName: fr.simplex-software.osgi.fuse.aries.osgi-customer-m
+ anagement-data
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: fr.simplex_software.osgi.fuse.jpa.model;uses:="javax.per
+ sistence,javax.xml.bind.annotation";version="0.0.1"
+Import-Package: javax.persistence;version="[2,3)",javax.xml.bind.annotat
+ ion,org.hibernate.proxy,javassist.util.proxy
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.5.0.201709291849

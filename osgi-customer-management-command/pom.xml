@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>fr.simplex-software.osgi.fuse.aries</groupId>
+    <artifactId>osgi-customer-management</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>osgi-customer-management-command</artifactId>
+  <packaging>bundle</packaging>
+  <name>OSGi Customer Management :: The command module</name>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.karaf.shell</groupId>
+      <artifactId>org.apache.karaf.shell.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>fr.simplex-software.osgi.fuse.aries</groupId>
+      <artifactId>osgi-customer-management-data</artifactId>
+      <type>bundle</type>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.karaf.tooling</groupId>
+        <artifactId>karaf-services-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <configuration>
+          <instructions>
+            <Private-Package>fr.simplex_software.osgi.fuse.jpa.command</Private-Package>
+            <Import-Package>fr.simplex_software.osgi.fuse.jpa.model, org.apache.karaf.shell*;version="[4,5)", *</Import-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
