@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1544031988397
+Bnd-LastModified: 1544116888389
 Build-Jdk: 1.8.0_191
-Built-By: nicolas
+Built-By: Nicolas DUMINIL
 Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
 Bundle-ManifestVersion: 2
 Bundle-Name: OSGi Customer Management :: The service module
