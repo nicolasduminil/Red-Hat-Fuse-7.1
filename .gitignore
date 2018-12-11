@@ -17,4 +17,4 @@
 *.iws
 .idea/
 .DS_Store/
-**/target/
+target/
