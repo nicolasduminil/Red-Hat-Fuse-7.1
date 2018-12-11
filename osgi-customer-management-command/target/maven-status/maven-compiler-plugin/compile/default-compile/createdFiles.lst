@@ -1,5 +1,0 @@
-fr\simplex_software\osgi\fuse\jpa\command\CreateCommand.class
-fr\simplex_software\osgi\fuse\jpa\command\FindByIdCommand.class
-fr\simplex_software\osgi\fuse\jpa\command\FindAllCommand.class
-fr\simplex_software\osgi\fuse\jpa\command\CustomerIdCompleter.class
-fr\simplex_software\osgi\fuse\jpa\command\RemoveCustomerCommand.class
