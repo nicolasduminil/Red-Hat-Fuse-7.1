@@ -38,29 +38,31 @@ Then, you can install the datasource feature:
 karaf@root()> feature:install osgi-customer-management-datasource
 ```
 
-Then, you can install the service command feature (commands customer-management:* will not be available until you have installed 
-the service implementation):
+And install the service implementation:
+
+```
+karaf@root()> feature:install osgi-customer-management-service``
+```
+
+Then, you can install the service command feature (please make sure the previous service is installes as it might take a few seconds to start):
 
 ```
 karaf@root()> feature:install osgi-customer-management-command
 ```
 
-And install the service implementation:
 
-`karaf@root()> feature:install osgi-customer-management-service``
-```
 
 ## Usage
 
 Once you have installed the feature, you can see new commands available in the Apache Karaf shell.
 
-`customer-management:create` command adds a new customer in the customer database. For instance:
+customer-management:create - command to add a new customer in the customer database. For instance:
 
 ```
 karaf@root()> customer-management:create Nicolas Duminil "26 Allée des Sapins" "Soisy sous Montmorency" "Val d''Oise" 95230 France
 ```
 
-`customer-management:findAll` command lists the current customers:
+customer-management:findAll command to list the current customers:
 
 ```
 karaf@root()> customer-management:findAll
@@ -70,7 +72,7 @@ ID │ First Name │ Last Name │ Street              │ City                
 
 ```
 
-`customer-management:findById` command get the customer with the given id:
+customer-management:findById - command to get the customer with the given id:
 
 ```
 karaf@root()> customer-management:findById 1
@@ -84,7 +86,7 @@ State                Val d''Oise
 Country              France
 ```
 
-`customer-management:remove` command removes a customer from the database:
+customer-management:remove - command to remove a customer from the database:
 
 ```
 karaf@root()> customer-management:removeCustomer 1

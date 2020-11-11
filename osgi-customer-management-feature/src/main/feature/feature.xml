@@ -4,6 +4,7 @@
   <feature name="osgi-customer-management-datasource" version="${project.version}">
     <config name="org.ops4j.datasource-customer-management">
       osgi.jdbc.driver.class=org.h2.Driver
+      url=jdbc:h2:~/customer-management
       databaseName=customer-management;create=true
       dataSourceName=customer-management
     </config>

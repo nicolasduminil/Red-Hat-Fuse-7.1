@@ -33,6 +33,7 @@
           <instructions>
             <Private-Package>fr.simplex_software.osgi.fuse.jpa.command</Private-Package>
             <Import-Package>fr.simplex_software.osgi.fuse.jpa.model, org.apache.karaf.shell*;version="[4,5)", *</Import-Package>
+            <Karaf-Commands>fr.simplex_software.osgi.fuse.jpa.command.*</Karaf-Commands>
           </instructions>
         </configuration>
       </plugin>
